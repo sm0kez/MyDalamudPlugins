@@ -29,7 +29,7 @@ A Dalamud plugin for Final Fantasy XIV that automatically greets nearby players 
 
 ```text
 https://raw.githubusercontent.com/sm0kez/MyDalamudPlugins/main/pluginmaster.json
-
+```
 Type `/wavekeeper` to open the settings window.
 
 ### Settings Overview
