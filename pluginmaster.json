@@ -3,7 +3,7 @@
         "Author": "sm0var",
         "Name": "WaveKeeper",
         "Punchline": "Auto-greet nearby players and reply to emotes!",
-        "Description": "WaveKeeper automatically detects nearby players and greets them with a configurable emote. It can also auto-reply when someone emotes at you. Supports friends-only mode, ignore lists, motion-only emotes, adjustable range/timing, and more.",
+        "Description": "WaveKeeper automatically detects nearby players and greets them with a configurable emote. It can also auto-reply when someone emotes at you. Supports friends-only mode, ignore lists, adjustable range/timing, and more.",
         "InternalName": "WaveKeeper",
         "AssemblyVersion": "1.0.0.0",
         "RepoUrl": "https://github.com/sm0kez/WaveKeeper",
