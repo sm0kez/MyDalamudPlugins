@@ -23,7 +23,7 @@ A Dalamud plugin for Final Fantasy XIV that automatically greets nearby players 
 2. Go to the **Experimental** tab
 3. Scroll down to **Custom Plugin Repositories**
 4. Paste the following URL into the empty box:
-https://raw.githubusercontent.com/sm0kez/MyDalamudPlugins/main/pluginmaster.json
+**Repository URL:** https://raw.githubusercontent.com/sm0kez/MyDalamudPlugins/main/pluginmaster.json
 
 5. Click the **+** button, then **Save and Close**
 6. Open the Plugin Installer with `/xlplugins`
