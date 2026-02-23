@@ -1,0 +1,32 @@
+[
+    {
+        "Author": "sm0var",
+        "Name": "WaveKeeper",
+        "Punchline": "Auto-greet nearby players and reply to emotes!",
+        "Description": "WaveKeeper automatically detects nearby players and greets them with a configurable emote. It can also auto-reply when someone emotes at you. Supports friends-only mode, ignore lists, adjustable range/timing, and more.",
+        "InternalName": "WaveKeeper",
+        "AssemblyVersion": "1.0.0.1",
+        "RepoUrl": "https://github.com/sm0kez/WaveKeeper",
+        "ApplicableVersion": "any",
+        "Tags": [
+            "emote",
+            "greet",
+            "wave",
+            "social",
+            "auto",
+            "reply"
+        ],
+        "DalamudApiLevel": 14,
+        "IsHide": false,
+        "IsTestingExclusive": false,
+        "DownloadCount": 0,
+        "LastUpdate": "1740356400",
+        "IconUrl": "https://raw.githubusercontent.com/sm0kez/WaveKeeper/main/images/icon.png",
+        "ImageUrls": [
+            "https://raw.githubusercontent.com/sm0kez/WaveKeeper/main/images/preview1.png"
+        ],
+        "DownloadLinkInstall": "https://github.com/sm0kez/WaveKeeper/releases/download/v1.0.0.0/WaveKeeper.zip",
+        "DownloadLinkTesting": "https://github.com/sm0kez/WaveKeeper/releases/download/v1.0.0.0/WaveKeeper.zip",
+        "DownloadLinkUpdate": "https://github.com/sm0kez/WaveKeeper/releases/download/v1.0.0.0/WaveKeeper.zip"
+    }
+]
