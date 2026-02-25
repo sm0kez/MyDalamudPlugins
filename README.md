@@ -124,6 +124,11 @@ WaveKeeper adds a clickable entry to the server info bar (DTR):
 
 ---
 
+**Most asked Question : Even after clearing greets, It doesn't do anything!**
+> If you stand still for too long, the AFK filters kick in. Just move a bit to re-activate the plugin.
+
+---
+
 **Q1: Why doesn't it greet everyone around me, only my friends?**
 > The default mode is **Friends Only**. Open `/wavekeeper` → **General → Who to Greet** and switch the mode to **Everyone**. You can also choose **Whitelist Only** if you want to control exactly who gets greeted.
 
