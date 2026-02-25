@@ -249,6 +249,187 @@ WaveKeeper adds a clickable entry to the server info bar (DTR):
 
 ---
 
+**Q26: What is the "Scan Interval" setting for?**
+> This controls how often WaveKeeper checks your surroundings for new players. A lower value (e.g. 1s) is faster but heavier on performance; a higher value (e.g. 5s) is more efficient for busy areas.
+
+---
+
+**Q27: Can I increase the detection range beyond 50 yalms?**
+> No. FFXIV only provides object data for players within a certain radius. 15-20 yalms is the recommended range for natural social interactions; 50 is the maximum reliable range.
+
+---
+
+**Q28: Why does my character keep turning around suddenly?**
+> This happens if **Target Before Greeting** is enabled. WaveKeeper automatically targets the player it's about to greet to ensure the emote lands correctly. Disable this if you want to keep facing your original direction.
+
+---
+
+**Q29: Does WaveKeeper work in instanced duties?**
+> Only if you disable the **Duty/Instance Filter**. By default, WaveKeeper pauses itself in duties to avoid distracting emotes during mechanics or combat.
+
+---
+
+**Q30: Can I set the queue spacing to 0 for instant emotes?**
+> You can set it as low as 0.5s. Setting it to 0 is not allowed because the game client can't process multiple chat/emote commands in the same frame reliably, which could cause emotes to fail.
+
+---
+
+**Q31: How do I make WaveKeeper use emotes without text in the chat box?**
+> Enable **Motion Only** under **General → Emote**. This adds the `motion` parameter to your commands, playing the animation while keeping the chat log clean.
+
+---
+
+**Q32: Will a "Per-Player Emote" override my "Sprout Greeting"?**
+> Yes. Per-Player overrides are the highest priority. If you have a specific emote set for a friend, WaveKeeper will use that even if they are a sprout, returner, or FC member.
+
+---
+
+**Q33: How does the "Re-Greet Cooldown" work?**
+> If someone leaves your range and comes back, WaveKeeper won't greet them again until the configured time (in minutes) has passed. This prevents spamming someone who is running back and forth.
+
+---
+
+**Q34: Can I change the [WaveKeeper] text that appears in my chat?**
+> Yes. Go to **Chat → Chat Prefix** and type anything you like. Leaving it blank will remove the prefix entirely.
+
+---
+
+**Q35: What are "Chat Color IDs"?**
+> These are the numeric codes used by FFXIV for UI text colors. Setting this to something other than 0 will color the WaveKeeper notifications in your chat log.
+
+---
+
+**Q36: What happens if I go AFK?**
+> If **Pause When AFK** is enabled, WaveKeeper will stop all automated greeting until you move or perform an action again.
+
+---
+
+**Q37: Can I ignore other players who are AFK?**
+> Yes. Enable **Filters → Ignore AFK Players**. WaveKeeper will skip anyone with the red AFK chair icon, so you don't waste emotes on people who aren't at their keyboard.
+
+---
+
+**Q38: Is there a way to quickly toggle the Compact overlay?**
+> Yes. Use the command `/wavekeeper compact` to show or hide the small floating status window.
+
+---
+
+**Q39: Can I hide the icon in the server info (DTR) bar?**
+> Yes. In the settings, you can toggle the **DTR Bar Toggle** off to remove the WK icon from your top UI bar.
+
+---
+
+**Q40: How many entries does the "Greet History" hold?**
+> The history log keeps track of the last 500 interactions. Once it hits the limit, the oldest entries are deleted to save memory.
+
+---
+
+**Q41: Where are the exported CSV files saved?**
+> They are saved in your Dalamud plugin configurations folder, usually: `%appdata%\XIVLauncher\pluginConfigs\WaveKeeper_history.csv`.
+
+---
+
+**Q42: What is the difference between "Save New" and "Overwrite" in Profiles?**
+> **Save New** creates a completely new profile slot with your current settings. **Overwrite** updates the currently selected profile with any changes you've made.
+
+---
+
+**Q43: Will I lose my stats if I delete a profile?**
+> No. Stats (like total greets and history) are global and stored separately from the individual configuration profiles.
+
+---
+
+**Q44: If I'm in "Friends Only" mode, will it still greet people on my Whitelist?**
+> Yes. The Whitelist and Per-Player lists always override the general "Who to Greet" logic.
+
+---
+
+**Q45: Can I blacklist certain zones like Limsa Aetheryte?**
+> Yes. Use **Filters → Zone Blacklist** to prevent WaveKeeper from ever firing in specific high-traffic areas while keeping it active everywhere else.
+
+---
+
+**Q46: Why is there a "Zone Warmup"?**
+> This gives the game world and player list a few seconds to load properly when you zone in. It prevents WaveKeeper from instantly waving at 20 people at once before your screen even fades in.
+
+---
+
+**Q47: Why would I use the Level Range filter?**
+> It's useful for RP or social events where you only want to interact with players of a certain level (e.g. "new players only" or "level 100 only").
+
+---
+
+**Q48: Does it greet people in Linkshells?**
+> Currently, the plugin can't reliably detect Linkshell membership through the game's API without external data. This is being researched for a future update.
+
+---
+
+**Q49: Does the Combat Filter stop replies?**
+> No. By default, activity filters (Combat, Mounted, etc.) only stop *proactive* greetings. Auto-replies and Mimicry will still fire unless you specifically toggle them off.
+
+---
+
+**Q50: What happens to the queue when I logout?**
+> The emote queue is cleared instantly when you logout or change zones to prevent "leftover" emotes from firing unexpectedly later.
+
+---
+
+**Q51: Can I see a list of all commands?**
+> Yes. Type `/wavekeeper` for settings, `/wavekeeper stats` for the history window, and `/wavekeeper compact` for the overlay.
+
+---
+
+**Q52: Are my daily stats reset at a specific time?**
+> Daily stats reset at midnight based on your local system clock.
+
+---
+
+**Q53: Does WaveKeeper affect my frame rate (FPS)?**
+> The performance impact is negligible. Scanning for players is a very light operation, and the plugin stays idle most of the time.
+
+---
+
+**Q54: Will this conflict with "Honorific" or other name-related plugins?**
+> No. WaveKeeper reads player data directly from the game's object table and does not interfere with how other plugins display names or titles.
+
+---
+
+**Q55: How do I know if I'm on the latest version?**
+> The Dalamud Plugin Installer (`/xlplugins`) will notify you of any updates. Always keep the plugin updated for the best compatibility with new FFXIV patches.
+
+---
+
+### 🍹 Club & Venue Hosting (Upcoming Features)
+
+*The following features are planned for future releases to better support club greeters and venue hosts.*
+
+---
+
+**Q56: Can WaveKeeper send a custom text message (Say/Yell) when someone arrives?**
+> ⏳ **Planned:** A "Custom Greeting Message" feature is in development, allowing you to send a text greeting (like "Welcome to the club!") alongside your emote.
+
+---
+
+**Q57: Can I include the player's name in my custom greeting message?**
+> ⏳ **Planned:** We are working on placeholder support (e.g. `{name}`) so you can personalize your automated greetings.
+
+---
+
+**Q58: Can I set up a "Zone Anchor" to only greet people at the door?**
+> ⏳ **Planned:** This will allow you to set a coordinate point (the venue entrance) so you only greet people walking in, rather than everyone inside the building.
+
+---
+
+**Q59: Can I send guest logs to a Discord Webhook?**
+> ⏳ **Planned:** Venue owners will eventually be able to link a Discord webhook to get real-time (or batched) notifications of who visited their venue.
+
+---
+
+**Q60: Can I ignore fellow staff members or specific FC ranks?**
+> ⏳ **Planned:** We are investigating a way to filter out players based on their FC rank or specific "Staff" titles to avoid greeting your own team.
+
+---
+
 ## 🙏 Credits
 
 **Made by sm0var**
