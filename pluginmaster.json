@@ -3,14 +3,14 @@
     "Author": "sm0var",
     "Name": "WaveKeeper",
     "InternalName": "WaveKeeper",
-    "AssemblyVersion": "4.0.1.0",
+    "AssemblyVersion": "4.0.3.0",
     "Description": "Automatically greets nearby players with emotes and replies when someone emotes at you.",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 14,
     "RepoUrl": "https://github.com/sm0kez/WaveKeeper",
-    "DownloadLinkInstall": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.1.0/WaveKeeper.zip",
-    "DownloadLinkUpdate": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.1.0/WaveKeeper.zip",
-    "DownloadLinkTesting": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.1.0/WaveKeeper.zip",
-    "LastUpdated": 1740462092
+    "DownloadLinkInstall": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.3.0/WaveKeeper.zip",
+    "DownloadLinkUpdate": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.3.0/WaveKeeper.zip",
+    "DownloadLinkTesting": "https://github.com/sm0kez/WaveKeeper/releases/download/v4.0.3.0/WaveKeeper.zip",
+    "LastUpdated": 1772081616
   }
 ]
